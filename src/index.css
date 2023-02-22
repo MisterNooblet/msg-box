@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+button {
+  background-color: #fff7e9;
+  border: none;
+  border: 1px solid #ff731d;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ff731d;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.userform {
+  background-color: #1746a2;
+  border-radius: 10px;
+  padding: 2vw;
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+  height: 50vh;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  -webkit-box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.5);
+  border: 3px solid #fff7e946;
+}
+
+.nav,
+.footer {
+  padding: 2vh 0;
+  margin: 0;
+  background-color: #1746a2;
+  width: 100vw;
+}
+.nav {
+  border-bottom: 3px solid #fff7e946;
+}
+header {
+  -webkit-box-shadow: 0px 9px 16px 0px #000000;
+  box-shadow: 0px 9px 16px 0px #000000;
+  z-index: 5;
+}
+.nav ul,
+.footer ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+.footer {
+  color: white;
+  border-top: 3px solid #fff7e946;
+}
+.postoffice {
+  overflow-y: scroll;
+  width: 100vw;
+}
+.postcard {
+  display: flex;
+  flex-direction: column;
+}
+.postcard ul {
+  margin: 0;
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  list-style: none;
+  background-color: #1746a2;
+  border-bottom: 1px solid #ff731d;
+}
+.postcard li {
+  padding: 0 10px;
+}
+.message {
+  flex-grow: 1;
+}
+.messagefield {
+  width: 100vw;
+  display: flex;
+}
+.messagefield input {
+  flex-grow: 1;
+  padding: 1vw 0;
+}
+.permissionspage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.permissionspage a {
+  text-decoration: none;
+}
+.permissionspage a:visited {
+  color: black;
 }
